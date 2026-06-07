@@ -61,14 +61,12 @@ GPOcc generalizes powerful visual geometry priors to sparse Gaussian occupancy p
 If you find this work useful, please consider citing:
 
 ```bibtex
-@misc{zhou2026generalizingvisualgeometrypriors,
-      title={Generalizing Visual Geometry Priors to Sparse Gaussian Occupancy Prediction},
-      author={Changqing Zhou and Yueru Luo and Changhao Chen},
-      year={2026},
-      eprint={2602.21552},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2602.21552},
+@inproceedings{zhou2026generalizing,
+  title={Generalizing Visual Geometry Priors to Sparse Gaussian Occupancy Prediction},
+  author={Zhou, Changqing and Luo, Yueru and Chen, Changhao},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={28578--28587},
+  year={2026}
 }
 ```
 
