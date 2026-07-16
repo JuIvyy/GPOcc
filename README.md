@@ -33,6 +33,7 @@
 
 ## News
 
+- [2026.07] [GPOcc++](https://arxiv.org/pdf/2607.13481) is released.
 - [2026.05] Code is released.
 - [2026.02] :tada: **GPOcc was accepted to CVPR 2026.**
 
