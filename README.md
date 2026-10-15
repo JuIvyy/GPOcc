@@ -33,6 +33,7 @@
 
 ## News
 
+- [2026.10] :rocket: **[Demo](demo/) is released!** Pretrained models load with a single `from_pretrained` call, and you can run GPOcc on your own images in minutes. All you need is PyTorch: **no mmcv / mmdet / mmengine installation required**. See [Quick Demo](#quick-demo).
 - [2026.07] [GPOcc++](https://arxiv.org/pdf/2607.13481) is released.
 - [2026.05] Code is released.
 - [2026.02] :tada: **GPOcc was accepted to CVPR 2026.**
@@ -40,6 +41,23 @@
 ## Overview
 
 GPOcc generalizes powerful visual geometry priors to sparse Gaussian occupancy prediction. The core idea is to lift monocular observations into sparse 3D Gaussian scene elements and aggregate them into occupancy-aware scene representations for downstream prediction.
+
+## Quick Demo
+
+Try GPOcc on a single image without installing the training environment. The [`demo/`](demo/) folder is a self-contained package that depends only on PyTorch, not on mmcv/mmdet. Pretrained models load with `from_pretrained`:
+
+```bash
+cd demo && pip install -r requirements.txt
+python demo.py --model JuIvyy/GPOcc --image examples/scene0000_00_00061.jpg
+```
+
+```python
+from gpocc_hub import GPOcc
+model = GPOcc.from_pretrained("JuIvyy/GPOcc").cuda().eval()  # or subfolder="dpt"
+out = model.predict("room.jpg")  # out["occupancy"]: (60, 60, 36) semantic voxels
+```
+
+The prediction is saved as a colored voxel point cloud (`.ply`). See [`demo/README.md`](demo/README.md) for details.
 
 ## Getting Started
 
