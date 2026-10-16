@@ -5,6 +5,9 @@
   <a href="https://arxiv.org/abs/2602.21552">
     <img src="https://img.shields.io/badge/arXiv-2602.21552-b31b1b.svg" alt="arXiv" />
   </a>
+  <a href="https://huggingface.co/JuIvyy/GPOcc">
+    <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-yellow" alt="Hugging Face Model" />
+  </a>
 </p>
 
 <p align="center"><strong>
@@ -22,7 +25,8 @@
 
 <p align="center"><strong>
     <a href="https://juivyy.github.io/gpocc/">Project Page</a> |
-    <a href="https://arxiv.org/abs/2602.21552">Paper</a>
+    <a href="https://arxiv.org/abs/2602.21552">Paper</a> |
+    <a href="https://huggingface.co/JuIvyy/GPOcc">🤗 Model</a>
 </strong></p>
 
 <p align="center">
